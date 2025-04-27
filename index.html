@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivalin Kudil | Ladies PG Hostel</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Comfortable and safe ladies paying guest accommodation with modern amenities and homely environment">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        },
+                        secondary: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f9a8d4' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-primary-600">Ivalin Kudil</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="text-gray-700 hover:text-primary-600 font-medium">Home</a></li>
+                    <li><a href="#features" class="text-gray-700 hover:text-primary-600 font-medium">Features</a></li>
+                    <li><a href="#rooms" class="text-gray-700 hover:text-primary-600 font-medium">Rooms</a></li>
+                    <li><a href="#location" class="text-gray-700 hover:text-primary-600 font-medium">Location</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-primary-600 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-700" id="mobile-menu-button" aria-label="Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <ul class="space-y-3">
+                <li><a href="#home" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Home</a></li>
+                <li><a href="#features" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Features</a></li>
+                <li><a href="#rooms" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Rooms</a></li>
+                <li><a href="#location" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Location</a></li>
+                <li><a href="#contact" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Your Home Away From Home</h2>
+                    <p class="text-lg text-gray-600 mb-8">Experience comfort, safety, and community in our premium ladies paying guest accommodation.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="tel:+919677197573" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg text-center transition duration-300 shadow-md">Call Now</a>
+                        <a href="#features" class="bg-white hover:bg-gray-100 text-primary-600 font-medium py-3 px-6 rounded-lg text-center transition duration-300 border border-primary-600">Explore Features</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="../images/IvalinKudi.jpg?height=500&width=600" alt="Ladies PG Hostel" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Ivalin Kudil?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide a safe, comfortable, and nurturing environment for women to thrive in.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="wifi" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">High-Speed WiFi</h3>
+                    <p class="text-gray-600">Stay connected with unlimited high-speed internet access throughout the premises.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="utensils" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Homemade Nutritious Meals</h3>
+                    <p class="text-gray-600">Nutritious and delicious meals prepared fresh daily with a variety of menu options.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="washing-machine" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Laundry Services</h3>
+                    <p class="text-gray-600">Convenient laundry facilities with washing machines and drying areas.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="activity" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Individual Cottage</h3>
+                    <p class="text-gray-600">Spacious individual cottages for your privacy and comfort.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="house" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fully Furnished Rooms</h3>
+                    <p class="text-gray-600">Comfortable fully furnished rooms, ready for you.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary-600 mb-4">
+                        <i data-lucide="bed" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">24/7 Security</h3>
+                    <p class="text-gray-600">CCTV surveillance, security personnel, and biometric access for complete peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 mx flex items-center justify-center">
+                    <img src="../images/Ivalin Kudil.png" alt="About Ivalin Kudil" class="rounded-xl w-96 h-96 shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Ivalin Kudil</h2>
+                    <p class="text-gray-600 mb-6">Established in 2020, Ivalin Kudil has been providing quality accommodation for women for over 5 years. Our mission is to create a safe, comfortable, and supportive environment where women can focus on their education and career.</p>
+                    <p class="text-gray-600 mb-6">We understand the importance of a conducive living space that feels like home, which is why we pay attention to every detail - from nutritious meals to comfortable beds and clean surroundings.</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex -space-x-2">
+                            <img src="../images/r1.png" alt="Resident" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="../images/r2.png" alt="Resident" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="../images/r3.png" alt="Resident" class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <p class="text-gray-600">Trusted by <span class="font-semibold">500+</span> residents</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Accommodation Options</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose from our variety of room options to suit your preferences and budget.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Room 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Double Sharing.png" alt="Double Sharing Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Double Sharing</h3>
+                        <p class="text-gray-600 mb-4">Spacious room shared with one roommate, with attached bathroom.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Twin Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹9,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Room 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Triple Sharing.png" alt="Triple Sharing Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Triple Sharing</h3>
+                        <p class="text-gray-600 mb-4">Economical option with three occupants and shared bathroom.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Three Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹7,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Four Sharing.png" alt="Triple Sharing Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Four Sharing</h3>
+                        <p class="text-gray-600 mb-4">Affordable living with four roommates, featuring a shared bathroom.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Three Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹7,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Five Sharing.png" alt="Hourly Basis Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hourly Basis</h3>
+                        <p class="text-gray-600 mb-4">Flexible stay options charged by the hour, ideal for short visits.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Three Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹7,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Single.png" alt="Daily Basis Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Daily Basis</h3>
+                        <p class="text-gray-600 mb-4">Comfortable accommodation available on a per-day rental basis.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Three Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹7,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="../images/Single.png" alt="Weekly Basis Room" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Weekly Basis</h3>
+                        <p class="text-gray-600 mb-4">Convenient and cost-effective stays for week-long durations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Three Beds</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Study Tables</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wardrobes</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-primary-600 font-bold text-xl">₹7,000/month</p>
+                            <a href="#contact" class="text-primary-600 hover:text-primary-700 font-medium">Book Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Residents Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from the women who call Ivalin Kudil their home.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="../images/r1.png" alt="Resident" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Priya Sharma</h4>
+                            <p class="text-gray-500 text-sm">Student, Nift</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Living at Ivalin Kudil has been a wonderful experience. The staff is very supportive, and the facilities are excellent. I feel safe and comfortable here, which allows me to focus on my studies."</p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="../images/r2.png" alt="Resident" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Anjali Patel</h4>
+                            <p class="text-gray-500 text-sm">IT Professional</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"As a working professional, I appreciate the convenient location and the amenities provided. The food is delicious, and the community events help me connect with like-minded women."</p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star-half" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="../images/r3.png" alt="Resident" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Meera Reddy</h4>
+                            <p class="text-gray-500 text-sm">Medical Intern</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The security system gives me peace of mind, especially when I have late shifts. The rooms are clean and well-maintained, and the staff is always ready to help with any issues."</p>
+                    <div class="flex text-yellow-400">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Location</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Conveniently located with easy access to public transportation, educational institutions, and shopping centers.</p>
+            </div>
+            
+            <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                <!-- Replace with actual Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.643900204889!2d80.2590861748155!3d12.994613187322855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267464a9006d5%3A0x1f689b1f179ee62b!2sIvalin%20Kudil%20Women&#39;s%20Hostel%20in%20Thiruvanmiyur!5e0!3m2!1sen!2sin!4v1745746925873!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start">
+                    <div class="text-primary-600 mr-4">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Address</h3>
+                        <p class="text-gray-600">97/2, TM Maistry St, Vannanthurai,<br> Thiruvanmiyur, Chennai,<br> Tamil Nadu 600041.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-primary-600 mr-4">
+                        <i data-lucide="bus" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Transportation</h3>
+                        <p class="text-gray-600">3 minutes to Adyar Bus Stands.<br>5 minutes to Thiruvanmiyur Bus Depot.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-primary-600 mr-4">
+                        <i data-lucide="landmark" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Nearby</h3>
+                        <p class="text-gray-600">Tidel IT Park (0.5 km)<br>Shopping Mall (0.6 km)<br>Nift Campus (0.8 km)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-secondary-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+                    <p class="text-gray-600 mb-8">Have questions or want to book a visit? Reach out to us!</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-primary-600 mr-4">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-1">Phone</h3>
+                                <p class="text-gray-600">+91 96771 97573</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-primary-600 mr-4">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-1">Email</h3>
+                                <p class="text-gray-600">thetenthomestay@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-primary-600 mr-4">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-1">Hostel Hours</h3>
+                                <p class="text-gray-600">Monday - Sunday: 9:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#" class="text-primary-600 hover:text-primary-700" aria-label="Facebook">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700" aria-label="Instagram">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700" aria-label="Twitter">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-primary-600 hover:text-primary-700" aria-label="WhatsApp">
+                                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h3>
+                        <iframe data-tally-src="https://tally.so/embed/mB62NY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="513" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
+"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-1  gap-8">
+                <div class="flex items-center justify-center flex-col">
+                    <img src="../images/Ivalin Kudil.png" class="w-12 h-12 text-center rounded-full mb-4" />
+                    <h3 class="text-xl font-bold mb-4 text-center">Ivalin Kudil</h3>
+                    <p class="text-gray-400 mb-4 text-center">Your home away from home. Safe, comfortable, and nurturing environment for women.</p>
+                    <div class="flex space-x-4 items-center justify-center">
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 Ivalin Kudil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+919677197573" class="fixed left-1/2 transform -translate-x-1/2 bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 text-center w-full bottom-0 shadow-lg text-lg hover:bg-green-600 md:hidden">
+        Call Now
+      </a>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Change icon based on menu state
+                const icon = menuButton.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.setAttribute('data-lucide', 'menu');
+                } else {
+                    icon.setAttribute('data-lucide', 'x');
+                }
+                lucide.createIcons();
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.querySelector('i').setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                });
+            });
+            
+            // Initialize Lucide icons
+            lucide.createIcons();
+        });
+    </script>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+</body>
+</html>
